@@ -41,6 +41,7 @@ export const services: Service[] = [
     icon: "Code",
     iconColor: "#3b82f6",
     slug: "web-development",
+    heroImage: "/webdevelopment.jpg",
     features: [
       "Custom website development",
       "Web application development",
@@ -124,7 +125,7 @@ export const services: Service[] = [
       {
         question: "Do you work with clients remotely?",
         answer:
-          "Yes, I work with clients from all over the world. We can communicate via email, phone, video calls, and project management tools to ensure smooth collaboration regardless of location.",
+          "Yes, I work with clients from all over the world including USA, UK, Canada, and Australia. We can communicate via email, phone, video calls, and project management tools to ensure smooth collaboration regardless of location.",
       },
     ],
   },
@@ -137,6 +138,7 @@ export const services: Service[] = [
     icon: "Shield",
     iconColor: "#8b5cf6",
     slug: "cybersecurity",
+    heroImage: "/cybersecurity.jpg",
     features: [
       "Security audits",
       "Penetration testing",
@@ -154,18 +156,10 @@ export const services: Service[] = [
         price: "₹20,000",
         description: "Essential security assessment for small websites",
         features: [
-          {
-            title: "Vulnerability scanning",
-            description: "Automated scanning for common vulnerabilities",
-            included: true,
-          },
+          { title: "Vulnerability scanning", description: "Automated scanning for common vulnerabilities", included: true },
           { title: "Basic penetration testing", description: "Manual testing of critical components", included: true },
           { title: "Security configuration review", description: "Review of security settings", included: true },
-          {
-            title: "Detailed report with recommendations",
-            description: "Comprehensive findings and fixes",
-            included: true,
-          },
+          { title: "Detailed report with recommendations", description: "Comprehensive findings and fixes", included: true },
           { title: "1 follow-up consultation", description: "Review of implemented changes", included: true },
           { title: "Advanced penetration testing", description: "In-depth manual testing", included: false },
           { title: "Code security review", description: "Review of application code", included: false },
@@ -183,11 +177,7 @@ export const services: Service[] = [
           { title: "Advanced vulnerability scanning", description: "Thorough automated scanning", included: true },
           { title: "In-depth penetration testing", description: "Comprehensive manual testing", included: true },
           { title: "Code security review", description: "Review of application code", included: true },
-          {
-            title: "Security implementation assistance",
-            description: "Help implementing security measures",
-            included: true,
-          },
+          { title: "Security implementation assistance", description: "Help implementing security measures", included: true },
           { title: "3 months of security monitoring", description: "Ongoing vulnerability detection", included: true },
           { title: "Security architecture review", description: "Review of overall security design", included: true },
           { title: "Employee security training", description: "Security awareness training", included: false },
@@ -204,11 +194,7 @@ export const services: Service[] = [
           { title: "Comprehensive security audit", description: "Complete security assessment", included: true },
           { title: "Advanced penetration testing", description: "In-depth manual testing", included: true },
           { title: "Security architecture review", description: "Review of overall security design", included: true },
-          {
-            title: "Complete security implementation",
-            description: "Implementation of all security measures",
-            included: true,
-          },
+          { title: "Complete security implementation", description: "Implementation of all security measures", included: true },
           { title: "6 months of security monitoring", description: "Continuous security oversight", included: true },
           { title: "Employee security training", description: "Comprehensive security training", included: true },
           { title: "Incident response planning", description: "Detailed incident response procedures", included: true },
@@ -396,7 +382,7 @@ export const services: Service[] = [
       {
         id: "enterprise-ai",
         name: "Enterprise AI Solutions",
-        price: "₹100,000",
+        price: "₹1,00,000",
         description: "Advanced AI for complex business needs",
         features: [
           { title: "Enterprise AI strategy", description: "Comprehensive AI planning", included: true },
@@ -430,7 +416,7 @@ export const services: Service[] = [
       {
         question: "Will AI replace human jobs in my company?",
         answer:
-          "AI is typically most effective when it augments human capabilities rather than replacing them entirely. The goal is usually to automate repetitive or time-consuming tasks, allowing your team to focus on more creative, strategic, and high-value activities. I can help you implement AI in a way that enhances your team's productivity and job satisfaction.",
+          "AI is typically most effective when it augments human capabilities rather than replacing them entirely. The goal is usually to automate repetitive or time-consuming tasks, allowing your team to focus on more creative, strategic, and high-value activities.",
       },
     ],
   },
@@ -475,7 +461,7 @@ export const services: Service[] = [
       {
         id: "standard-app",
         name: "Standard Mobile App",
-        price: "₹100,000",
+        price: "₹1,00,000",
         description: "Feature-rich app for businesses",
         popular: true,
         features: [
@@ -493,7 +479,7 @@ export const services: Service[] = [
       {
         id: "premium-app",
         name: "Premium Mobile App",
-        price: "₹200,000",
+        price: "₹2,00,000",
         description: "Advanced app with all features",
         features: [
           { title: "Cross-platform development", description: "Works on iOS and Android", included: true },
@@ -522,7 +508,7 @@ export const services: Service[] = [
       {
         question: "Do you handle app store submissions?",
         answer:
-          "Yes, I handle the entire process of submitting your app to both the Apple App Store and Google Play Store. This includes preparing all necessary assets, setting up developer accounts (if needed), and ensuring your app meets all store guidelines and requirements.",
+          "Yes, I handle the entire process of submitting your app to both the Apple App Store and Google Play Store. This includes preparing all necessary assets, setting up developer accounts if needed, and ensuring your app meets all store guidelines and requirements.",
       },
       {
         question: "Can you update my existing mobile app?",
@@ -625,6 +611,102 @@ export const services: Service[] = [
         question: "Can you optimize my existing database?",
         answer:
           "Yes, I can analyze your existing database and identify opportunities for optimization, including query performance, indexing strategies, schema improvements, and hardware recommendations. This can significantly improve your application's speed and responsiveness.",
+      },
+    ],
+  },
+  {
+    id: "data-recovery",
+    title: "Data Recovery",
+    shortDescription: "Recover lost, deleted, or corrupted data",
+    longDescription:
+      "I provide expert data recovery services for hard drives, SSDs, RAID arrays, and databases. Whether it's accidental deletion, hardware failure, ransomware attack, or system crash — I recover your critical data quickly and securely.",
+    icon: "HardDrive",
+    iconColor: "#f59e0b",
+    slug: "data-recovery",
+    features: [
+      "HDD & SSD data recovery",
+      "RAID array recovery",
+      "Database recovery",
+      "Ransomware data restoration",
+      "Deleted file recovery",
+      "USB & memory card recovery",
+      "Virtual machine recovery",
+      "Emergency recovery service",
+    ],
+    plans: [
+      {
+        id: "essential-recovery",
+        name: "Essential Recovery",
+        price: "₹5,000",
+        description: "For deleted files and simple drive failures",
+        features: [
+          { title: "Deleted file recovery", description: "Recover accidentally deleted files", included: true },
+          { title: "Logical drive failure", description: "Fix software-level failures", included: true },
+          { title: "Basic HDD/SSD recovery", description: "Standard drive recovery", included: true },
+          { title: "Up to 100GB data", description: "Standard data volume", included: true },
+          { title: "3-5 business days", description: "Standard turnaround time", included: true },
+          { title: "RAID recovery", description: "Complex RAID array recovery", included: false },
+          { title: "Database recovery", description: "Recover corrupted databases", included: false },
+          { title: "Emergency service", description: "Priority 12hr turnaround", included: false },
+        ],
+        buttonText: "Get Started",
+      },
+      {
+        id: "advanced-recovery",
+        name: "Advanced Recovery",
+        price: "₹15,000",
+        description: "For complex failures, RAID, and databases",
+        popular: true,
+        features: [
+          { title: "RAID 0/1/5 recovery", description: "Complex array recovery", included: true },
+          { title: "Database recovery", description: "MySQL, MongoDB, PostgreSQL", included: true },
+          { title: "Ransomware recovery", description: "Restore encrypted data", included: true },
+          { title: "Up to 1TB data", description: "Large data volume", included: true },
+          { title: "Priority 24-48hr turnaround", description: "Fast service", included: true },
+          { title: "USB & memory card", description: "Portable storage recovery", included: true },
+          { title: "Virtual machine recovery", description: "VM data restoration", included: false },
+          { title: "Emergency 12hr service", description: "Fastest turnaround", included: false },
+        ],
+        buttonText: "Get Started",
+      },
+      {
+        id: "enterprise-recovery",
+        name: "Enterprise Recovery",
+        price: "₹35,000",
+        description: "Full-scale server and enterprise data recovery",
+        features: [
+          { title: "RAID 6/10 + NAS/SAN", description: "Enterprise storage recovery", included: true },
+          { title: "Virtual machine recovery", description: "Complete VM restoration", included: true },
+          { title: "Unlimited data size", description: "No data volume limit", included: true },
+          { title: "Emergency 12hr service", description: "Fastest priority turnaround", included: true },
+          { title: "Post-recovery security audit", description: "Prevent future data loss", included: true },
+          { title: "All database types", description: "Any database platform", included: true },
+          { title: "Dedicated support", description: "Direct line throughout recovery", included: true },
+          { title: "Recovery guarantee", description: "Best-effort recovery promise", included: true },
+        ],
+        buttonText: "Get Started",
+      },
+    ],
+    faqs: [
+      {
+        question: "What are the chances of successful data recovery?",
+        answer:
+          "Success rates vary depending on the type and extent of damage. For logical failures (accidental deletion, formatting), success rates are typically 80-95%. For physical damage, it depends on the severity. The sooner you contact me after data loss, the better the chances of recovery.",
+      },
+      {
+        question: "Can you recover data remotely?",
+        answer:
+          "Yes, for logical failures and software-related issues, I can often perform recovery remotely using secure tools. For physical hardware damage, you may need to send the drive, but I'll guide you through the safest shipping process.",
+      },
+      {
+        question: "What should I do immediately after data loss?",
+        answer:
+          "Stop using the device immediately — continued use can overwrite lost data and reduce recovery chances. Don't try to fix it yourself. Contact me as soon as possible for a free assessment. The sooner we start, the higher the success rate.",
+      },
+      {
+        question: "Is my data kept confidential during recovery?",
+        answer:
+          "Absolutely. I follow strict confidentiality protocols. All recovered data is handled with complete privacy, and I sign NDAs if required. Your data is never shared with third parties and is securely deleted from my systems after successful delivery.",
       },
     ],
   },
